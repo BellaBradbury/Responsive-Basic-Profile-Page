@@ -104,15 +104,6 @@ h1, h2 {
   display: none;
 }
 
-/* FLEXBOX */
-
-/* .top-cot, .header-cot, .port-cot, .skills-cot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-
 .bottom-cot1 {
   display: flex;
   flex-direction: row;
@@ -125,6 +116,8 @@ h1, h2 {
 ==================================== */
 
 @media (min-width: 768px) {
+
+  /* CLASS STYLES */
 
   .name1 {
     padding-bottom: 0;
@@ -162,6 +155,8 @@ h1, h2 {
     margin-right: 15rem;
   }
 
+  /* ELEMENT STYLES */
+
   header img {
     max-width: 45%;
   }
@@ -175,6 +170,8 @@ h1, h2 {
     padding: .5rem;
     background-color: #f7c7db;
   }
+
+  /* ID STYLES */
 
   #portfolio h1, #skills h1, #contact h1 {
     margin: 4rem 0 4rem 0;
@@ -237,11 +234,46 @@ h1, h2 {
 
 @media (min-width: 1024px) {
 
+    /* CLASS STYLES */
+
+  .top-nav {
+    padding-bottom: .5rem;
+  }
+
   .bottom-cot1 {
     display: none;
   }
   .bottom-cot2 {
     display: contents;
+  }
+
+  .name2 {
+    margin-left: .5rem;
+    margin-right: 30rem;
+  }
+
+  /* FLEXBOX */
+
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .port-cot {
+    justify-content: space-around;
+  }
+
+  .port {
+    flex-basis: 30%;
+  }
+
+  .bottom-cot2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 0;
   }
 
 
