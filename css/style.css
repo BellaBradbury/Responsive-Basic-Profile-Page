@@ -24,7 +24,7 @@ p, .skill, nav, .bottom-cot1 {
 /* ELEMENTS */
 
 img {
-  max-width: 300px;
+  max-width: 90%;
   background-position: center;
 }
 
@@ -97,7 +97,6 @@ h1, h2 {
   background-color: white;
   margin: .5rem;
   padding: .5rem 0;
-  width: 100%;
 }
 
 .skill {
@@ -130,12 +129,32 @@ h1, h2 {
 
 @media (min-width: 768px) {
 
+  .bottom-cot1 {
+    display: none;
+  }
+  .bottom-cot2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top-cot {
+    display: flex;
+  }
+  img {
+    min-width: 90%;
+  }
 
 
 }
 
 @media (min-width: 1024px) {
 
+  .bottom-cot1 {
+    display: none;
+  }
+  .bottom-cot2 {
+    display: contents;
+  }
 
 
 }
