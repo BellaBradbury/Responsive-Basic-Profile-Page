@@ -1,13 +1,12 @@
 
 /* font-family: 'Lora', serif;
-
+/* font-family: 'Bebas Neue', cursive; */
 
 
 
 /* =================================
   PAGE STYLES
 ==================================== */
-/* font-family: 'Bebas Neue', cursive; */
 
 /* UNIVERSAL */
 
@@ -25,7 +24,10 @@ p, .skill, nav, .bottom-cot1 {
 
 img {
   max-width: 90%;
-  background-position: center;
+}
+
+header img {
+  max-width: 70%;
 }
 
 a {
@@ -77,13 +79,6 @@ h1, h2 {
   font-weight: 600;
 }
 
-/* ID STYLES */
-
-#contact p, #skills li {
-  margin-top: 5%
-}
-
-
 /* CLASS STYLES */
 
 .name1 {
@@ -95,26 +90,28 @@ h1, h2 {
 
 .nav1 {
   background-color: white;
-  margin: .5rem;
-  padding: .5rem 0;
+  margin: .5rem 0 .5rem 0;
+  padding: 1rem;
 }
 
 .skill {
   background-color: pink;
-  margin: 0px 40px 0px 40px;
+  margin: .5rem 0 .5rem 0;
+  padding: .5rem;
 }
 
-.bottom-cot2 {
+.bottom-nav2 {
   display: none;
 }
 
 /* FLEXBOX */
 
-.top-cot, .port-cot, .skills-cot {
+/* .top-cot, .header-cot, .port-cot, .skills-cot {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  justify-content: center;
+} */
 
 .bottom-cot1 {
   display: flex;
@@ -129,21 +126,112 @@ h1, h2 {
 
 @media (min-width: 768px) {
 
-  .bottom-cot1 {
+  .name1 {
+    padding-bottom: 0;
+  }
+
+  .bottom-nav1 {
     display: none;
   }
-  .bottom-cot2 {
-    display: flex;
-    flex-direction: row;
+
+  .bottom-nav2 {
+    display: contents;
   }
+
+  .nav1 {
+    background-color: #f7c7db;
+    margin: .5rem 1 .5rem 1;
+    padding: 1rem;
+  }
+
+  .skill {
+    margin: 2%;
+  }
+
+  .info {
+    margin: 2% 15% 2% 15%;
+  }
+
+  .name2, .nav2 {
+    margin: .5rem;
+    padding: .5rem;
+  }
+
+  .name2 {
+    margin-left: .5rem;
+    margin-right: 15rem;
+  }
+
+  header img {
+    max-width: 45%;
+  }
+
+  section {
+    margin: 15% 0 15% 0;
+  }
+
+  footer ul {
+    border-top: 3px solid darkgrey;
+    padding: .5rem;
+    background-color: #f7c7db;
+  }
+
+  #portfolio h1, #skills h1, #contact h1 {
+    margin: 4rem 0 4rem 0;
+  }
+
+  /* FLEXBOX */
 
   .top-cot {
     display: flex;
-  }
-  img {
-    min-width: 90%;
+    flex-direction: row;
+    justify-content: center;
   }
 
+  .header-cot {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .head-itm, .port {
+    flex-basis: 50%;
+  }
+
+  .head-itm2 {
+    justify-content: flex-start;
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .port-cot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skills-cot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .skill {
+    flex-grow: 1;
+  }
+
+  .skill1 {
+    order: 1;
+  }
+
+  .bottom-cot2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
 
 }
 
