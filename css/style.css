@@ -189,6 +189,7 @@ h1, h2 {
     display: inline-flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .head-itm, .port {
