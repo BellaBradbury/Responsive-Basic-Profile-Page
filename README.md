@@ -1,5 +1,5 @@
 # Mobile First Responsive Layout with HTML and CSS
-  Team Treehouse - Front End Web Development TechDegree - Project 2
+  Team Treehouse - Web Development TechDegree - Project 2
 
 
 Submitted 4/8/22 ***EXCEEDS EXPECTATIONS***
