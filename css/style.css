@@ -112,7 +112,7 @@ h1, h2 {
 }
 
 /* =================================
-  MEDIA QUIRIES
+  MEDIA QUERIES
 ==================================== */
 
 @media (min-width: 768px) {
@@ -139,6 +139,7 @@ h1, h2 {
 
   .skill {
     margin: 2%;
+    flex-grow: 1;
   }
 
   .info {
@@ -215,10 +216,6 @@ h1, h2 {
     align-items: center;
   }
 
-  .skill {
-    flex-grow: 1;
-  }
-
   .skill1 {
     order: 1;
   }
@@ -239,6 +236,9 @@ h1, h2 {
 
   .top-nav {
     padding-bottom: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .bottom-cot1 {
@@ -246,6 +246,11 @@ h1, h2 {
   }
   .bottom-cot2 {
     display: contents;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 0;
   }
 
   .name2 {
@@ -254,13 +259,6 @@ h1, h2 {
   }
 
   /* FLEXBOX */
-
-  .top-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .port-cot {
     justify-content: space-around;
   }
@@ -268,16 +266,6 @@ h1, h2 {
   .port {
     flex-basis: 30%;
   }
-
-  .bottom-cot2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-bottom: 0;
-  }
-
-
 }
 
 
